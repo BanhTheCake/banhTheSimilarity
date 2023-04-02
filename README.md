@@ -5,7 +5,7 @@
 -   Frontend - Backend: NextJs-13
 -   Database: Prisma
 -   UI/UX: Tailwind Css
--   Demo:
+-   Demo: https://banh-the-similarity.vercel.app
 
 # Features
 
