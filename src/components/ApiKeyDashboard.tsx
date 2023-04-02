@@ -16,7 +16,7 @@ const ApiKeyDashboard = async ({ apiKey }: ApiKeyDashboardProps) => {
     if (!user) return notFound();
 
     return (
-        <div className="flex-1 w-full h-full flex flex-col gap-6 justify-center pt-4">
+        <div className="flex-1 w-full h-full flex flex-col space-y-6 justify-center pt-4">
             <LargeHeading className="text-center md:text-left">
                 Welcome back, {user.name}
             </LargeHeading>
@@ -24,7 +24,7 @@ const ApiKeyDashboard = async ({ apiKey }: ApiKeyDashboardProps) => {
                 <p className="text-[18px] dark:text-slate-100 text-slate-900 flex-shrink-0">
                     Your api key:
                 </p>
-                <div className="flex items-center gap-4 w-full md:w-fit">
+                <div className="flex items-center space-x-4 w-full md:w-fit">
                     <input
                         type="text"
                         readOnly

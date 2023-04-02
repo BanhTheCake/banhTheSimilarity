@@ -3,7 +3,7 @@ import { Loader2 } from 'lucide-react';
 
 const DashboardLoading = ({}) => {
     return (
-        <div className="flex-1 w-full h-full flex-col flex items-center justify-center gap-6">
+        <div className="flex-1 w-full h-full flex-col flex items-center justify-center space-y-6">
             <LargeHeading className="text-center font-normal" size="small">
                 Preparing the dashboard
             </LargeHeading>

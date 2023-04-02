@@ -10,7 +10,7 @@ interface RequestApiDashboardProps {}
 
 const RequestApiDashboard: FC<RequestApiDashboardProps> = ({}) => {
     return (
-        <div className="flex-1 w-full h-full flex flex-col items-center justify-center gap-6 -mt-28">
+        <div className="flex-1 w-full h-full flex flex-col items-center justify-center space-y-6 -mt-28">
             <Key size={'60px'} className="text-slate-300" />
             <LargeHeading className="text-center" size="medium">
                 Request your API key

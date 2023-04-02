@@ -83,28 +83,22 @@ const MobileMenu = () => {
                         {Opts.map((item) => {
                             if (item.isProtect && !isLogin) return null;
                             return (
-                                <Dropdown.Item
-                                    key={item.href}
-                                    className="outline-none"
-                                >
-                                    <Link
-                                        href={item.href}
-                                        className="flex gap-3 items-center p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 capitalize outline-none border-none"
-                                    >
+                                <Link key={item.href} href={item.href}>
+                                    <Dropdown.Item className="flex space-x-3 items-center p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 capitalize outline-none border-none">
                                         <item.Icon
                                             size={'20px'}
                                             className="dark:text-slate-300 text-slate-700"
                                         />
                                         <p>{item.name}</p>
-                                    </Link>
-                                </Dropdown.Item>
+                                    </Dropdown.Item>
+                                </Link>
                             );
                         })}
 
                         {/* Mode */}
 
                         <Dropdown.Item
-                            className="p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 flex gap-3 items-center cursor-pointer capitalize outline-none border-none"
+                            className="p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 flex space-x-3 items-center cursor-pointer capitalize outline-none border-none"
                             onClick={handleToggle}
                         >
                             <IconMode
@@ -118,7 +112,7 @@ const MobileMenu = () => {
                         {/* Auth */}
 
                         <Dropdown.Item
-                            className="p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 flex gap-3 items-center cursor-pointer capitalize outline-none border-none font-semibold"
+                            className="p-1.5 px-3 hover:bg-black/10 dark:hover:bg-slate-700 flex space-x-3 items-center cursor-pointer capitalize outline-none border-none font-semibold"
                             onClick={() => {
                                 isLogin ? handleSignOut() : handleSignIn();
                             }}

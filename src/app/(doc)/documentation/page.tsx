@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const DocumentationPage = () => {
     return (
-        <div className="flex-1 w-full h-full flex flex-col items-center mt-3 mb-16 gap-3">
+        <div className="flex-1 w-full h-full flex flex-col items-center mt-3 mb-16 space-y-3">
             <LargeHeading size="medium">Making a request</LargeHeading>
             <p className="text-slate-700 dark:text-slate-100 mt-3 text-center">
                 api/v1/similarity
