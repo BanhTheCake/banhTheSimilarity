@@ -47,6 +47,7 @@ const CodeDisplay: FC<CodeDisplayProps> = ({
     }, [animationDelay, animationTime, code, isAnimate]);
 
     return (
+        <div className='relative'>
         <Highlight
             {...defaultProps}
             theme={themeValue}
@@ -77,6 +78,9 @@ const CodeDisplay: FC<CodeDisplayProps> = ({
                             </div>
                         );
                     })}
+                </pre>
+            )}
+        </Highlight>
                     <WithCopyBtn value={code}>
                         <Button
                             variant="ghost"
@@ -85,9 +89,7 @@ const CodeDisplay: FC<CodeDisplayProps> = ({
                             <Copy />
                         </Button>
                     </WithCopyBtn>
-                </pre>
-            )}
-        </Highlight>
+        </div>
     );
 };
 
