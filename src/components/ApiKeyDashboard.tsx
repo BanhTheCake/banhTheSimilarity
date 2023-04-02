@@ -20,7 +20,7 @@ const ApiKeyDashboard = async ({ apiKey }: ApiKeyDashboardProps) => {
             <LargeHeading className="text-center md:text-left">
                 Welcome back, {user.name}
             </LargeHeading>
-            <div className="flex items-center gap-4 flex-col md:flex-row">
+            <div className="flex md:items-center space-y-2 md:space-y-0 space-x-0 md:space-x-2 flex-col md:flex-row">
                 <p className="text-[18px] dark:text-slate-100 text-slate-900 flex-shrink-0">
                     Your api key:
                 </p>
