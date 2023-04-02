@@ -7,7 +7,7 @@ import redis from './lib/redis';
 
 const rateLimit = new Ratelimit({
     redis: redis,
-    limiter: Ratelimit.slidingWindow(2, '1 h'),
+    limiter: Ratelimit.slidingWindow(3, '1 h'),
 });
 
 // Use withAuth will not include "/api/auth/session" (that belong to Next-Auth)
@@ -19,7 +19,7 @@ export default withAuth(
             const { success } = await rateLimit.limit(ip);
             if (!success) {
                 return NextResponse.json(
-                    'It is allow to call api one in an hour'
+                    'It is allow to call api three times in one hour'
                 );
             }
             return NextResponse.next();
