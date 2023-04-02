@@ -5,7 +5,6 @@ import { authOptions } from '@/lib/auth';
 import { notFound } from 'next/navigation';
 import DashboardHistory from './DashboardHistory';
 import DashboardOpts from './DashboardOpts';
-
 interface ApiKeyDashboardProps {
     apiKey: ApiKeyT;
 }

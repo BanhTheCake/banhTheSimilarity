@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function LoginPage() {
     return (
         <div className="flex-1 w-full h-full flex items-center justify-center">
-            <div className="flex flex-col gap-4 items-center">
-                <Link href={''}>
+            <div className="flex flex-col space-y-4 items-center">
+                <Link href={'/'}>
                     <Button
-                        className="flex gap-3 items-center font-semibold"
+                        className="flex space-x-3 items-center font-semibold"
                         variant="ghost"
                     >
                         <ChevronLeft />
